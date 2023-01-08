@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://www17.ogata.tk/plyr-dark.min.css" media="screen"/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" media="screen"/>
+<link rel="stylesheet" href="https://www17.ogata.tk/plyr-style.min.css" media="screen"/>
+<section class="mb-5">
+  <video id="player-video" playsinline="playsinline" controls="controls" data-poster="https://picsum.photos/id/1041/674/379">
+    <!-- 1080p -->
+    <source src="dist/sample-1080.mp4" type="video/mp4" size="1080"/>
+    <!-- 720p -->
+    <source src="dist/sample-720.mp4" type="video/mp4" size="720" default="default"/>
+    <!-- 480p -->
+    <source src="dist/sample-480.mp4" type="video/mp4" size="480"/>
+    <!-- vtt -->
+    <track kind="captions" label="中文字幕" src="dist/captions- 
+    zhTW.vtt" srclang="zh" default="default"/>
+    <track kind="captions" label="English captions" 
+    src="dist/captions-en.vtt" srclang="en"/>
+  </video>
+</section>
+<hr/>
+<!-- script -->
+<script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
+<script src="https://www17.ogata.tk/plyr-main.min.js"></script>
