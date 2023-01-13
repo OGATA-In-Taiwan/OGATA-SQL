@@ -17,3 +17,33 @@
 <script>
   const player = new Plyr('#player');
 </script>
+
+
+
+<div id="player-mobile"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.27.0/DPlayer.min.js" integrity="sha512-S4ZaugkFW1FjFLmQYt7dvJuNI0T3T3rwc8iHX3bAk3QT0KFlDrHxdEkg1g8WBkSiyZgtDSu62vvFigf66cVMPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    theme: '#FFF',
+    lang: 'zh-tw',
+    hotkey: 'true',
+    preload: 'auto',
+    playbackSpeed: [0.5, 0.75, 1, 1.25, 1.5, 2],
+    logo: '../img/►un.png',
+    volume: 0.7,
+    video: {
+        url: 'https://p1-em-ai.byteimg.com/obj/tos-cn-i-0026/0dd7c4dca2c54d368c32828e329782f5?filename=1.mp4',
+        pic: 'demo.png',
+        type: 'auto',
+    },
+    subtitle: {
+        url: 'dplayer.vtt',
+        type: 'webvtt',
+        fontSize: '25px',
+        bottom: '10%',
+        color: '#b7daff',
+    },
+  });
+</script>
+</div>
