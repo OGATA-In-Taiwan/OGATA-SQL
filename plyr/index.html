@@ -1,4 +1,4 @@
-<head>
+<!--head>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css"/>
   <link rel="stylesheet" href="plyr-style.min.css"/>
 </head>
@@ -17,4 +17,27 @@
   <script>
     const player = new Plyr('#player');
   </script>
-</body>
+</body-->
+
+
+
+<!-- 引用 CSS -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
+
+<!-- 放置影音 -->
+<video id="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+  <source src="https://p1-em-ai.byteimg.com/obj/tos-cn-i-0026/0dd7c4dca2c54d368c32828e329782f5?filename=1.mp4" type="video/mp4" size="4320" default="default"/>
+  <source src="https://p1-em-ai.byteimg.com/obj/tos-cn-i-0026/0dd7c4dca2c54d368c32828e329782f5?filename=1.mp4" type="video/mp4" size="1080"/>
+  <source src="https://p1-em-ai.byteimg.com/obj/tos-cn-i-0026/0dd7c4dca2c54d368c32828e329782f5?filename=1.mp4" type="video/mp4" size="720"/>
+  <source src="https://p1-em-ai.byteimg.com/obj/tos-cn-i-0026/0dd7c4dca2c54d368c32828e329782f5?filename=1.mp4" type="video/mp4" size="576"/>
+  <source src="https://p1-em-ai.byteimg.com/obj/tos-cn-i-0026/0dd7c4dca2c54d368c32828e329782f5?filename=1.mp4" type="video/mp4" size="144"/>
+  
+  <track kind="captions" label="中文字幕" src="dist/captions-zhTW.vtt" srclang="zh" default="default"/>
+  <track kind="captions" label="English captions" src="dist/captions-en.vtt" srclang="en"/>
+</video>
+
+<!-- 引用 JS -->
+<script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
+<script>
+  const player = new Plyr('#player');
+</script>
