@@ -1,0 +1,20 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css"/>
+  <link rel="stylesheet" href="plyr-style.min.css"/>
+</head>
+
+<body style="margin:0px auto;">
+  <section class="mb-5">
+    <video id="player-video" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+      <source src="MP4 影片檔路徑" type="video/mp4" size="1080" default="default"/>
+      <track kind="captions" label="中文字幕" src="dist/captions-zhTW.vtt" srclang="zh" default="default"/>
+      <track kind="captions" label="English captions" src="dist/captions-en.vtt" srclang="en"/>
+    </video>
+  </section>
+  
+  <script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
+  <script src="plyr-main.min.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
+</body>
