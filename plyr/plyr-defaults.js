@@ -1,3 +1,4 @@
+const player = new Plyr('#player', { defaults });
 const defaults = {
   // Disable
   enabled: true,
@@ -379,6 +380,6 @@ const defaults = {
     enabled: false,
     points: [],
   },
-}
+};
 
 export default defaults;
