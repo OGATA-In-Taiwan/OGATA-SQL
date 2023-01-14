@@ -1,4 +1,4 @@
-const defaults = new Plyr({
+const defaults = new Plyr('#defaults', {
   // Disable
   enabled: true,
 
