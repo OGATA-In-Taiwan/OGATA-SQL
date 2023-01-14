@@ -1,4 +1,4 @@
-const player = new Plyr('#player')
+const player = new Plyr('#player');
 const defaults = {
   // Disable
   enabled: true,
