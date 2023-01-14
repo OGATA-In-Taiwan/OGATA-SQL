@@ -1,4 +1,4 @@
-const defaults = {
+const defaults = new Plyr({
   // Disable
   enabled: true,
 
@@ -379,6 +379,6 @@ const defaults = {
     enabled: false,
     points: [],
   },
-};
+});
 
 export default defaults;
