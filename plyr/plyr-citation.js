@@ -4,5 +4,5 @@ var css = document.createElement('link');
   document.head.appendChild(css);
 
 function addScript(url){
-  document.write('<script src="https://cdn.plyr.io/3.7.3/plyr.js" type="text/javascript" charset="utf-8"></script>');
+  document.write('<script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>');
 }
